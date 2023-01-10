@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;  
+class swapping{
+public:
+int a,b;
+void swap(swapping  &s){
+  int c;
+  c=b;
+  b=a;
+  a=c;
+}
+};
+
+int main() {
+swapping s;
+  int a,b;
+   cin >> a >>b;
+  swap(a,b) ;
+  cout<<endl<<a<<endl<<b;
+ 
+    return 0;
+}
