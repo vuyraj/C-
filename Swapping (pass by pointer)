@@ -1,0 +1,28 @@
+
+#include <iostream>
+using namespace std;
+ class point{
+public:
+int a,b;
+void swap(point *p1)
+{
+    int z = p1->a;
+    p1->a = p1->b;
+    p1->b = z;
+}
+};
+ 
+int main()
+{
+    point p1;
+     p1.a = 45;
+  p1.b = 35;
+
+    cout << "Before Swap\n";
+    cout << "a = " << p1.a << " b = " << p1.b << "\n";
+ 
+    p1.swap(&p1);
+ 
+    cout << "After Swap with pass by pointer\n";
+    cout << "a = " << p1.a << " b = " << p1.b << "\n";
+}
